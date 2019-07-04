@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "7626130504",
+    "firebase_url": "https://authkotlin-d6919.firebaseio.com",
+    "project_id": "authkotlin-d6919",
+    "storage_bucket": "authkotlin-d6919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7626130504:android:f5b74b7e85020ddb",
+        "android_client_info": {
+          "package_name": "com.example.auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7626130504-ag9cj7fqjs385jpf4les7m68obbhcih2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoqOzpDCDKGfeUjhqzKhZnD1_3NVMOxNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7626130504-ag9cj7fqjs385jpf4les7m68obbhcih2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
