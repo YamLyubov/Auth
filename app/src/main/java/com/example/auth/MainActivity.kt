@@ -43,10 +43,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Picasso
-            .with(this) // give it the context
-            .load("https://i.imgur.com/H981AN7.jpg") // load the image
-            .into(photo_imageview_register)
+
 //        val url = "https://lh6.googleusercontent.com/-XkOJN2ZluFw/AAAAAAAAAAI/AAAAAAAABJE/JaqjpfD5lAg/s96-c/photo.jpg")
 //        var mIcon: Bitmap?  = null
 //        mIcon = BitmapFactory.decodeStream(url.openConnection().getInputStream())
@@ -117,10 +114,11 @@ class MainActivity : AppCompatActivity() {
                 uploadImageToFirebase()
                 val user = FirebaseAuth.getInstance().currentUser
                 saveUserToFirebaseDatabase((user!!.photoUrl).toString())
+                Log.d("Main",(user!!.photoUrl).toString())
                 val intent = Intent(this, UserAccount::class.java)
                 intent.putExtra("name", name)
                 intent.putExtra( "email", email)
-                //intent.putExtra( "photoUrl", (user!!.photoUrl).toString())
+                intent.putExtra( "photoUrl", (user!!.photoUrl).toString())
                 Log.d("Main","starting UserAccount")
                 startActivity(intent)
             }

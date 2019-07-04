@@ -25,12 +25,11 @@ class UserAccount: AppCompatActivity(){
 
         val email = intent.getStringExtra("email")
         val name = intent.getStringExtra("name")
-       val photoUrl = intent.getStringExtra("photoUrl")
+        val photoUrl = intent.getStringExtra("photoUrl")
 //        val user = FirebaseAuth.getInstance().currentUser
 //        val photo_url = (user!!.photoUrl).toString()
         email_textView.text = email
         name_textView.text = name
-        Log.d("Account", name)
         Picasso
             .with(this) // give it the context
             .load(photoUrl) // load the image
