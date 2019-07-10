@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso
 import java.net.URL
 
 
-class UserAccount: AppCompatActivity(){
+class UserAccount : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -26,8 +26,6 @@ class UserAccount: AppCompatActivity(){
         val email = intent.getStringExtra("email")
         val name = intent.getStringExtra("name")
         val photoUrl = intent.getStringExtra("photoUrl")
-//        val user = FirebaseAuth.getInstance().currentUser
-//        val photo_url = (user!!.photoUrl).toString()
         email_textView.text = email
         name_textView.text = name
         Picasso
